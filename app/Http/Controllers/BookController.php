@@ -24,7 +24,7 @@ class BookController extends Controller
     {
         $book = Book::create($request->only('title'));
         $book->detail()->create($request->only('author', 'published_year'));
-        return redirect()->route('books.index')->with('success', 'Book created successfully.');
+        return redirect()->route('books.index')->with('success', 'done created successfully.');
     }
 
     public function show($id)
@@ -44,7 +44,7 @@ class BookController extends Controller
         $book = Book::findOrFail($id);
         $book->update($request->only('title'));
         $book->detail()->update($request->only('author', 'published_year'));
-        return redirect()->route('books.index')->with('success', 'Book updated successfully.');
+        return redirect()->route('books.index')->with('success', 'Done updated successfully.');
     }
 
     public function destroy($id)
@@ -52,6 +52,6 @@ class BookController extends Controller
         $book = Book::findOrFail($id);
         $book->detail()->delete();
         $book->delete();
-        return redirect()->route('books.index')->with('success', 'Book deleted successfully.');
+        return redirect()->route('books.index')->with('success', 'Done deleted successfully.');
     }
 }
