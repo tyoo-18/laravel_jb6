@@ -23,7 +23,7 @@
                             @method('PUT')
 
                             <div class="form-group">
-                                <label for="title">Nama Buku </label>
+                                <label for="title">Jumlah Uang </label>
                                 <input type="text" class="form-control" id="title" name="title" value="{{ $book->title }}">
                             </div>
 
@@ -33,7 +33,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="published_year">Jumlah Buku Yang Di Pinjam</label>
+                                <label for="published_year">Jumlah Uang Yang Di Pinjam</label>
                                 <input type="text" class="form-control" id="published_year" name="published_year" value="{{ $book->detail->published_year }}">
                             </div>
 

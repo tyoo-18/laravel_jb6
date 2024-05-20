@@ -7,15 +7,15 @@
         <form action="{{ route('books.store') }}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="title">Nama Buku</label>
-                <input type="text" name="title" id="title" class="form-control" required>
+                <label for="title">Tanggal </label>
+                <input type="date" name="title" id="title" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="author">Nama Peminjam</label>
                 <input type="text" name="author" id="author" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="published_year">Jumlah Buku Yang Di Pinjam</label>
+                <label for="published_year">Jumlah Uang Yang Di Pinjam</label>
                 <input type="number" name="published_year" id="published_year" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary">Tambah</button>

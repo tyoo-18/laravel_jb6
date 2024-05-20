@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="card">
-                    <div class="card-header bg-primary text-white">List Peminjaman Buku</div>
+                    <div class="card-header bg-primary text-white">List Peminjaman Uang</div>
 
                     <div class="card-body">
                         @if(session('success'))
@@ -20,9 +20,9 @@
                             <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Nama Buku</th>
+                                        <th>Jumlah Uang</th>
                                         <th>Nama Peminjam</th>
-                                        <th>Jumlah Buku Yang Di Pinjam</th>
+                                        <th>Jumlah Uang Yang Di Pinjam</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -44,7 +44,7 @@
                                         </tr>
                                     @empty
                                         <tr>
-                                            <td colspan="4" class="text-center">No books found.</td>
+                                            <td colspan="4" class="text-center">Not found.</td>
                                         </tr>
                                     @endforelse
                                 </tbody>
